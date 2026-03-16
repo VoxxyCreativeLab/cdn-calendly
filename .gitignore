@@ -1,0 +1,43 @@
+# cdn-calendly — .gitignore
+#
+# This repo exists solely to host calendly-listener.js on GitHub
+# so jsDelivr can serve it as a CDN asset.
+#
+# IMPORTANT: Only calendly-listener.js should ever be pushed to this repo.
+# Changes to this file must originate from the template-calendly repo workflow:
+#   calendly-tracking-project-files/ → edit → push cdn-calendly → tag release
+# Do NOT push editor configs, OS files, or local tooling to this CDN repo.
+
+# ── Block everything else ─────────────────────────────────────────────────────
+*
+
+# ── Explicitly allow the only intended public files ──────────────────────────
+!calendly-listener.js
+!.gitignore
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors & IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Node / tooling (should never be here, but block just in case)
+node_modules/
+package.json
+package-lock.json
+yarn.lock
+
+# Logs
+*.log
+
+# Temp / build artifacts
+*.tmp
+*.bak
+dist/
+build/
