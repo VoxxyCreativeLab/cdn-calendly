@@ -4,7 +4,7 @@
 # so jsDelivr can serve it as a CDN asset.
 #
 # IMPORTANT: Only calendly-listener.js should ever be pushed to this repo.
-# Changes to this file must originate from the template-calendly repo workflow:
+# Changes to this file must originate from the gtm-template-calendly-tracking repo workflow:
 #   calendly-tracking-project-files/ → edit → push cdn-calendly → tag release
 # Do NOT push editor configs, OS files, or local tooling to this CDN repo.
 
